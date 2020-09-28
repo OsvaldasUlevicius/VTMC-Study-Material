@@ -1,0 +1,21 @@
+table, th, td {
+  border: 1px solid #000000;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  width: 25%;
+}
+
+th, td {
+  padding: 10px 0 10px 5px;
+  text-align: left;
+}
+
+.header, th {
+  background-color: #ECECEC;
+}
