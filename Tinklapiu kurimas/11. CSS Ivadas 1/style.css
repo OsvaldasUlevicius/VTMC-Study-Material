@@ -1,0 +1,72 @@
+.first-paragraph {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+.first-span,
+.tenth-paragraph {font-family: 'Roboto', sans-serif;}
+
+.second-paragraph {font-size: 24px;}
+
+.second-span,
+.fourth-paragraph,
+.tenth-paragraph {color: #5D47C9;}
+
+.third-paragraph {width: 40%;}
+
+.third-span {display: block;}
+
+.fourth-paragraph {
+    border: 4px solid #000;
+    font-size: 30px;
+}
+
+.fourth-span {font-size: 20px;}
+
+.fifth-paragraph {font-style: italic;}
+
+.fifth-span {font-weight: 700;}
+
+.sixth-paragraph,
+.tenth-span {text-decoration: underline;}
+
+.sixth-span {text-decoration: line-through;}
+
+.seventh-paragraph {line-height: 26px;;}
+
+.seventh-span {text-transform: uppercase;}
+
+.eighth-paragraph {text-indent: 30px;}
+
+.eighth-span,
+.ninth-paragraph {background-color: #F7FF00;}
+
+.ninth-span {background-color: #fff;}
+
+.tenth-paragraph {font-size: 30px;}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #289A4E;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+div {
+    width: 50%;
+    height: 200px;
+}
+
+.third-div,
+.fourth-div {
+    border: 5px solid #000;
+}
+
+.first-div {background-color: #ECF298;}
+
+.second-div {background-color: #EE8DF2;}
+
+.third-div {background-color: #98F29B;}
+
+.fourth-div {
+    background-color: #98E6F2;
+    box-sizing: border-box;
+}
