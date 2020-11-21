@@ -1,0 +1,136 @@
+/********** BASIC SETUP **********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #a8dadc;
+    height: 100vh;
+    width: 100%;
+}
+
+/********** HEADING **********/
+
+.title {
+    margin-bottom: 2.5%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.heading, .price {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.heading-sub {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.25rem;
+}
+
+/********** BURGER INGRIDIENTS' GENERIC PARTS **********/
+
+.burger {
+    display: table;
+    margin: auto;
+}
+
+.bun, .lettuce, .cheese, .patty, .tomatoes { margin: 0.25em auto; }
+
+.bun {
+    background-color: #fcbf49;
+    height: 5em;
+    width: 20em;
+}
+
+.lettuce {
+    background-color: #52b788;
+    height: 0.75em;
+    width: 22em;
+}
+
+.cheese {
+    background-color: #ffea00;
+    border-bottom: 0.35em solid #ffb700;
+    border-radius: 0.5em;
+    height: 1.15em;
+    width: 22.5em;
+}
+
+.tomatoes, .seed-box { 
+    line-height: 0;
+    text-align: center;
+}
+.tomato {
+    background-color: #d62828;
+    border-bottom: 0.5em solid #b72222;
+    border-radius: 0.5em;
+    display: inline-block;
+    height: 1.5em;
+    width: 10em;
+}
+
+.patty {
+    background-color: #603b2c;
+    border-bottom: 0.5em solid #3d261c;
+    border-radius: 1em;
+    height: 2.5em;
+    width: 21em;
+}
+
+/********** BURGER INGRIDIENTS' SPECIFIC PARTS **********/
+
+.top-bun {
+    border-bottom: 0.5em solid #e29604;
+    border-radius: 10em 10em 1em 1em;
+}
+
+.bottom-bun {
+    border-top: 0.5em solid #e29604;
+    border-radius: 1em 1em 10em 10em;
+    position: relative;
+}
+
+.top-lettuce {
+    border-bottom: 0.25em solid #43a276;
+    border-radius: 0.6em 0.6em 0 0;
+}
+
+.bottom-lettuce {
+    border-top: 0.25em solid #43a276;
+    border-radius: 0 0 0.6em 0.6em;
+}
+
+/********** BURGER BUNS' SEEDS **********/
+
+ .seed-box {
+    margin-left: 3em;
+    padding-top: 1em;
+}
+
+.seed {
+    background-color: #fdd78e;
+    border-radius: 50%;
+    display: inline-block;
+    height: 0.5em;
+    width: 1.5em;
+    margin: 0.75em 4em 0 0;
+}
+
+/********** PRICE TAG **********/
+
+.price-tag {
+    background-color: #d62828;
+    border-radius: 0.5em;
+    display: inline-block;
+    padding: 0.25em 1em;
+    position: absolute;
+    transform: rotate(-25deg);
+    bottom: -10%;
+    right: -10%;
+}
+
+.price { color: #a8dadc; }
