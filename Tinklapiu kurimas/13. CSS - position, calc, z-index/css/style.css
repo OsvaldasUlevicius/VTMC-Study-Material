@@ -1,0 +1,56 @@
+/********* BASIC SETUP **********/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/********* HEADING **********/
+
+.title {
+    background-color: #FFFFFF;
+    height: 10vh;
+    line-height: 10vh;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+
+/********* OUTER CONTAINERS **********/
+
+.container {
+    background-color: #e76f51;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+    width: 90vw;
+}
+
+.first-container { border: 1px solid #e76f51; }
+
+/********* INNER CONTAINERS **********/
+
+.inner-box {
+    background-color: #FFFFFF;
+    position: absolute;
+}
+
+.small-box {
+    height: 25vh;
+    width: 25vh;
+}
+
+.top-right, .bottom-right { right: 0; }
+
+.top-right { top: 0; }
+
+.bottom-right, .bottom-left { bottom: 0; }
+
+.center { 
+    height: 60%;
+    left: calc((100% - 30%) / 2 );
+    top: calc((100% - 60%) / 2 );
+    width: 30%;
+}
