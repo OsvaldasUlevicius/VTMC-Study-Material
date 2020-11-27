@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 { text-align: center; }
+
+.cat-ipsum,
+.zombie-ipsum,
+.food-ipsum,
+.title { margin-bottom: 2em; }
+
+.cat-img { 
+    float: left;
+    padding: 0 2em 2em 0;
+}
+
+.zombie-img {
+    float: right;
+    padding: 0 0 2em 2em;
+}
+
+.cake-text, .cheese-text { width: 47.5%; }
+
+.cake-text { display: inline-block; }
+
+.cheese-text { float: right; }
