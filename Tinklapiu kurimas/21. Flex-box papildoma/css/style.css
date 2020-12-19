@@ -1,0 +1,163 @@
+/*============================================================
+  BASE STYLES
+============================================================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+/*============================================================
+  FONTS
+============================================================*/
+
+p { line-height: 26px; }
+
+h1 { font-size: 26px; }
+
+h5 { 
+    font-size: 18px; 
+    font-weight: 400;
+}
+
+/*============================================================
+  UTILITIES
+============================================================*/
+
+.container { 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 500px) { .container { height: 100vh; } }
+
+/*============================================================
+  BUTTONS
+============================================================*/
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 40px;
+    width: 100%; 
+}
+
+/*============================================================
+  GRID
+============================================================*/
+
+.grid, .grid .grid-action { display: flex; }
+
+.grid, .grid .grid-action { flex-direction: column; }
+
+.grid .grid-header, .grid-action, .grid .grid-about { padding: 30px; }
+
+.grid .grid-header { background-color: #FFFFFF; }
+
+.grid .grid-header h1 { 
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px; 
+}
+
+.grid .grid-header h5 { 
+    color: hsl(71, 73%, 54%); 
+    margin-bottom: 10px;
+}
+
+.grid .grid-header p { color: hsl(218, 22%, 67%); }
+
+.grid .grid-subscription { color: #FFFFFF; }
+
+.grid .grid-action { 
+    background-color: hsl(179, 62%, 43%);
+    justify-content: space-between;
+}
+
+.grid .grid-about h5, .grid .grid-action h5 { margin-bottom: 10px; }
+
+.grid .grid-action div { margin-bottom: 5px; }
+
+.grid .grid-action p { margin-bottom: 15px; }
+
+.grid .grid-action button {
+    box-shadow: 2px 10px 29px 1px #1d7d7a;
+    -webkit-box-shadow: 2px 10px 29px 1px #1d7d7a; 
+}
+
+.grid .grid-action-cost, .grid .grid-action-period { display: inline-block; }
+
+.grid .grid-action-cost { 
+    font-size: 30px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.grid .grid-action-period { margin-left: 10px; }
+
+.grid .grid-action-period, .grid .grid-about ul { 
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+}
+
+.grid .grid-about { background-color: #86d1d0; }
+
+.grid .grid-about ul { 
+    line-height: 20px;
+    list-style: none;
+}
+
+@media (min-width: 400px) {
+    .grid { 
+        border-radius: 10px;
+        box-shadow: 2px 2px 19px 7px #b7bfc4;
+        -webkit-box-shadow: 2px 2px 19px 7px #b7bfc4; 
+        width: 90%; 
+    }
+    .grid .grid-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .grid .grid-about {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .grid { width: 641px; }
+
+    .grid .grid-subscription { 
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .grid .grid-action, .grid .grid-about { width: 50%; }
+
+    .grid .grid-action { border-bottom-left-radius: 10px; }
+
+    .grid .grid-action h5, .grid .grid-action div, .grid .grid-action p { margin-bottom: 0; }
+
+    .grid .grid-about { border-bottom-left-radius: 0; }
+
+}
+
+/*============================================================
+  ATTRIBUTION
+============================================================*/
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
