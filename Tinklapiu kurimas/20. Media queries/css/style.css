@@ -1,0 +1,57 @@
+/*============================================================
+  BASE STYLES
+============================================================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { background-color: #a8dadc; }
+
+@media (min-width: 780px) { body { background-color: #b5838d; } }
+
+@media (min-width: 1024px) { body { background-color: #ffcdb2; } }
+
+@media (min-width: 1200px) { body { background-color: #caf0f8; } }
+
+/*============================================================
+  PARAGRAPH ITEM
+============================================================*/
+
+.paragraph { 
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    width: 100%;
+ }
+
+.paragraph h1 { color: #f1faee; }
+
+.paragraph p { text-indent: 20px; }
+
+
+@media (min-width: 780px) {
+
+    .paragraph { width: 40%; }
+
+    .paragraph h1 { color: #ffcdb2; }
+
+}
+
+@media (min-width: 1024px) {
+
+    .paragraph { width: 28%; }
+
+    .paragraph h1 { color: #b5838d; }
+
+}
+
+@media (min-width: 1200px) {
+
+    .paragraph { width: 19%; }
+
+    .paragraph h1 { color: #023e8a; }
+    
+}
