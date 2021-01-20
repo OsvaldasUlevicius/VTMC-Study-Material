@@ -1,0 +1,109 @@
+/* =========================================================
+   1. PSEUDO KLASES
+========================================================= */
+
+ol > ::marker { 
+    font-size: 2em;
+    font-weight: bold;
+}
+
+a { 
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   2. PSEUDO ELEMENTAI
+========================================================= */
+
+ol > li:nth-child(2) > p:first-of-type::before { 
+     content: "tekstas prieš ";
+     color: red;
+}
+
+ol > li:nth-child(2) > p:nth-of-type(2)::after {
+    content: " tekstas po";
+    color: red;
+}
+
+ol > li:nth-child(2) > p:nth-of-type(3)::before,
+ol > li:nth-child(2) > p:nth-of-type(4)::after {
+    background: url(../img/garfield.png) no-repeat ;
+    background-size: 78px 97px;
+    content: "";
+    display: inline-block;
+    width: 100px; 
+    height: 100px;
+}
+
+ol > li:nth-child(2) > p:nth-of-type(5)::before,
+ol > li:nth-child(2) > p:nth-of-type(6)::after {
+    background-color: red;
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 16px;
+}
+
+/* =========================================================
+   3. SELECTION
+========================================================= */
+
+ol > li:nth-child(3) p::selection { background-color: red; }
+
+/* =========================================================
+   4. PIRMA RAIDE
+========================================================= */
+
+ol > li:nth-child(4) > p::first-letter {
+    color: red;
+    font-size: 2em;
+}
+
+/* =========================================================
+   5. PIRMA EILUTE
+========================================================= */
+
+ol > li:nth-child(5) > p::first-line {
+    background-color: red;
+    font-weight: bold;
+}
+
+/* =========================================================
+   6. CHILD SELEKTORIUS
+========================================================= */
+
+ol > li:nth-child(6) ul:first-of-type li:nth-of-type(odd),
+ol > li:nth-child(6) ul:nth-of-type(2) li:nth-of-type(even),
+ol > li:nth-child(6) ul:nth-of-type(3) li:nth-of-type(5) { background-color: red; }
+
+ol > li:nth-child(6) ul:nth-of-type(3) li:nth-of-type(3) { text-decoration: underline; }
+
+ol > li:nth-child(6) ul:nth-of-type(3) li:nth-of-type(4),
+ol > li:nth-child(6) ul:nth-of-type(4) li:first-of-type,
+ol > li:nth-child(6) ul:nth-of-type(5) li:last-of-type { color: red; }
+
+/* =========================================================
+   7. PEREJIMAI
+========================================================= */
+
+ol > li:nth-child(7) p:first-of-type::after,
+ol > li:nth-child(7) p:nth-of-type(2)::after,
+ol > li:nth-child(7) p:nth-of-type(3)::after {
+    background-color: red;
+    content: '';
+    display: block;
+    height: 200px;
+    margin-top: 10px;
+    width: 200px;
+    transition: linear 1s;
+}
+
+ol > li:nth-child(7) p:first-of-type:hover::after { background-color: blue; }
+ol > li:nth-child(7) p:nth-of-type(2):hover::after { width: 100%; }
+ol > li:nth-child(7) p:nth-of-type(3):hover::after { margin-left: 50px; } 
