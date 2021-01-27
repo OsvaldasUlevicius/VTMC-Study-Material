@@ -1,0 +1,66 @@
+@import "reset.css";
+
+/* =========================================================
+   BASE STYLES
+========================================================= */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* =========================================================
+   PAGE ELEMENTS
+========================================================= */
+
+.grass, .sky, .road { position: relative; }
+
+.sky {
+    height: 40%;
+    background-color: skyblue;
+}
+
+.grass {
+    height: 30%;
+    background-color: seagreen;
+}
+
+.road {
+    height: 30%;
+    background-color: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+/* =========================================================
+   ELEMENTS TO ANIMATE
+========================================================= */
+
+.mario { 
+    position: absolute;
+    top: -40px;
+    left: 0;
+    animation: 5s linear 1s infinite running drive;
+}
+
+/* =========================================================
+   KEYFRAMES
+========================================================= */
+
+@keyframes drive {
+    from { transform: translateX(0); }
+    to { transform: translateX(100vw); }
+}
