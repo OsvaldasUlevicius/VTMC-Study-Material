@@ -1,0 +1,35 @@
+div { padding: 16px; }
+
+.grid-container { 
+    color: #FFFFFF;
+    display:grid;
+    grid-gap: 16px 16px;
+    grid-template: 50px 1fr 2fr 50px / 200px repeat(3, 1fr);
+    height: 100vh;
+}
+
+.header {
+    background-color: #264653;
+    grid-column: 1 / 5;
+}
+
+.sidebar {
+    background-color: #2a9d8f;
+    grid-row: 2 / 4;
+}
+
+.footer {
+    background-color: #e9c46a;
+    grid-row: 4;
+    grid-column: 1 / 5;
+}
+
+.main-content {
+    background-color: #f4a261;
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+}
+
+.content {
+    background-color: #e76f51;
+}
