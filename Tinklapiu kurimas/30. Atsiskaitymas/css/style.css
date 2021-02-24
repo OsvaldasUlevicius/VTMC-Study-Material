@@ -1,0 +1,195 @@
+@import "reset.css";
+
+/* =========================================================
+   BASE STYLES 
+========================================================= */
+
+html { font-size: 62.5%; }
+
+body { 
+    background-color: #f3f3f3;
+    color: #4B4F51;
+    font-size: 1.8rem; /* 1rem = 10px */
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* =========================================================
+   HEADINGS & FONTS
+========================================================= */
+
+h1, h2, h3, h4 { 
+    color: #035755; 
+    font-weight: 700; 
+    text-transform: capitalize;
+}
+
+h1, h2 { margin-bottom: 3rem; }
+
+h1 { font-size: 3.6rem;  }
+
+h2 {  font-size: 2.7rem; }
+
+h3 { font-size: 2rem; }
+
+h4 { 
+    color: #fb4c47;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+h4 span { text-transform: uppercase; }
+
+p { line-height: 2.2rem; }
+
+/* =========================================================
+   ACTIONS 
+========================================================= */
+
+a {
+    color: #4B4F51;
+    margin-left: 1.6rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #fb4c47;
+    border: 0;
+    border-radius: 5rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    height: 5rem;
+    outline: none;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+button:hover {
+   background-color: #c93d39;
+   cursor: pointer;
+}
+
+/* =========================================================
+   HEADER 
+========================================================= */
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.header-menu { 
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================================
+   INFO BODY 
+========================================================= */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.info-block {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    border-radius: 5rem;
+}
+
+.info-block-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem;
+}
+
+.info-block-action p { margin-bottom: 1rem; }
+
+.info-block-body { margin-bottom: 5rem; }
+
+.info-block img {
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.info-block-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.info-block-container h2,
+.info-block-container > p {margin-bottom: 5rem; }
+
+.info-block-container p { text-align: center; }
+
+.info-block-container > img {
+    margin-top: -5rem;
+    width: 100%;
+}
+
+.info-block-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.detail-information {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 0.5rem solid #fb4c47;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.detail-information img { width: 13rem; }
+
+.detail-information img,
+.detail-information h3 { margin-bottom: 3rem; }
+
+@media (min-width: 850px) {
+
+    a { line-height: 2.2rem; }
+
+    button { width: 20rem; }
+
+    .header { 
+       flex-direction: row; 
+       padding: 1rem 10rem;
+    }
+
+    .header-menu { flex-direction: row; }
+
+    .container { width: 85rem; }
+
+    .info-block,
+    .info-block-details { flex-direction: row; }
+
+    .info-block img { width: 40rem; }
+
+    .detail-information {
+       width: calc(72% / 3 );
+       margin-bottom: 0;
+    }
+    
+ }
