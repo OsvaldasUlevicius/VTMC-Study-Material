@@ -1,0 +1,86 @@
+/********** GENERIC **********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color: #e9ecef;
+    font-family: 'Roboto', sans-serif;
+}
+
+/********** REPEATING **********/
+
+.flex-container, .box, .box-social { display: flex; }
+
+.flex-container, .box-social { width: 80%; }
+
+.box, .title-container { text-align: center; }
+
+.sub-title, .box-address, .box-about, .box-connect, .box-social a { color: #adb5bd; }
+
+.title, .box-name { font-weight: 700; }
+
+.image-container img, .box-social i { border-radius: 50%; }
+
+/********** CONTAINERS **********/
+
+.flex-container { 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.title-container { padding: 3em 0; }
+
+.image-container img { 
+    width: 5em; 
+}
+
+/********** TITLE **********/
+
+.title { 
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+/********** BOX **********/
+
+.box { 
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    flex-direction: column;
+    height: 25em;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    width: 18em;
+    -webkit-box-shadow: 2px 2px 3px 0px #adb5bd; 
+    box-shadow: 2px 2px 3px 0px #adb5bd;
+}
+
+@media (min-width: 1000px) { 
+    .box { flex: 1 0 21%; } 
+}
+
+.box-address { font-size: 0.8em; }
+
+.box-connect { text-decoration: none; }
+
+.box-connect:hover, .box-social a:hover { color: #45484c; }
+
+.box-social i:hover { border-color:#45484c; }
+
+.box-social {
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.box-social i {
+    border: 1px solid #e6e9eb;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
