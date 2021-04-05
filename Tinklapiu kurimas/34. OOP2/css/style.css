@@ -1,0 +1,76 @@
+@import "reset.css";
+
+/* =========================================================
+   BASE STYLES 
+========================================================= */
+
+html { font-size: 62.5%; }
+
+body { 
+    font-size: 1.6rem;
+}
+
+.container { width: 100%; }
+
+@media (min-width: 1200px) { 
+   .container { 
+      width: 120rem; 
+      margin: auto;
+   } 
+
+}
+
+.rating-container {
+   display: flex; 
+   flex-direction: row-reverse;
+   justify-content: flex-end;
+}
+
+h1 {
+   font-size: 4rem;
+   text-transform: uppercase;
+   text-align: center;
+   margin: 2rem 0;
+}
+
+label {
+   display: block;
+   margin: 1rem 0;
+}
+
+input[type=text],
+input[type=submit],
+input[type=button] {
+   width: 100%;
+   height: 5rem;
+   box-sizing: border-box;
+}
+
+input[type=radio] {
+   display: none;
+}
+
+form {
+   margin-bottom: 2rem;
+}
+
+table {
+   border: 1px solid black;
+   width: 100%;
+   border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid black;
+}
+
+.star {
+   display: inline-block;
+   font-size: 5rem;
+}
+
+.rating:hover ~ .star,
+.star:hover { color: yellow; }
+
+.rating:checked ~ .star,
+.star:hover { color: yellow; }
